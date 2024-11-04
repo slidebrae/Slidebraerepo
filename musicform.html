@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Survey Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        form {
+            background: #fff;
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        fieldset {
+            margin-bottom: 20px;
+            padding: 10px;
+        }
+        legend {
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea,
+        select {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin: 5px 0 15px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"],
+        input[type="reset"] {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            background-color: #007BFF;
+            color: #fff;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: #0056b3;
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" method="post">
+        <!-- Name input -->
+        <fieldset>
+            <legend>Your Name</legend>
+            <input type="text" name="name" placeholder="Enter your name" required>
+        </fieldset>
+
+        <!-- Email input -->
+        <fieldset>
+            <legend>Email Address</legend>
+            <input type="email" name="email" placeholder="Enter your email address" required>
+        </fieldset>
+
+        <!-- Scrolling text box -->
+        <fieldset>
+            <legend>Your Favorite Music</legend>
+            <textarea name="favorite_music" rows="3" cols="60" placeholder="What type of music do you enjoy?"></textarea>
+        </fieldset>
+
+        <!-- Radio buttons for genre preference -->
+        <fieldset>
+            <legend>Favorite Genre</legend>
+            <label><input type="radio" name="genre" value="rock" required> Rock</label><br>
+            <label><input type="radio" name="genre" value="pop"> Pop</label><br>
+            <label><input type="radio" name="genre" value="jazz"> Jazz</label><br>
+            <label><input type="radio" name="genre" value="classical"> Classical</label>
+        </fieldset>
+
+        <!-- Select box for favorite artists -->
+        <fieldset>
+            <legend>Favorite Artist</legend>
+            <select name="artist" required>
+                <option value="">Select an artist</option>
+                <option value="artist1">Artist 1</option>
+                <option value="artist2">Artist 2</option>
+                <option value="artist3">Artist 3</option>
+                <option value="artist4">Artist 4</option>
+            </select>
+        </fieldset>
+
+        <!-- Date input -->
+        <fieldset>
+            <legend>Date of Listening</legend>
+            <input type="date" name="listening_date" required>
+        </fieldset>
+
+        <!-- Submit and Reset buttons -->
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+
+    <div class="footer">
+        <p>Created by: Braeden</p>
+        <p>Email: <a href="mailto:braedencoolboy@gmail.com">braedencoolboy@gmail.com</a></p>
+    </div>
+</body>
+</html>
